@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { check } = require('express-validator');
-const userController = require('./../controllers/userController');
+const usuarioController = require('../controllers/usuarioController');
 
 router.post('/', 
     [
@@ -9,7 +9,7 @@ router.post('/',
         check('email', 'Agregar un email válido').isEmail(),
         check('pass', 'La contraseña debe tener más de 6 caracteres').isLength({min: 6})
     ],
-    userController.createUser
+    usuarioController.crearUsuario
 );
 
 module.exports = router;

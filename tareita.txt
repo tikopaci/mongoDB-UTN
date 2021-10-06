@@ -7,11 +7,11 @@ C) Tarea para hacer en grupo:
         proyectoAlQuePertenecen(mongoose.Schema.Types.ObjectId ref: Proyectos)
     2) Luego agegar el router de la Tarea en el index.js:
      app.use('/api/tareas', require('./routes/tareas'))
-    3) Craar en la carpeta routes el archivo tareas.js
+    3) Crear en la carpeta routes el archivo tareas.js
     aqui copiar de proyecto routes las primeras lineas
     4) Crear tareaController.js en la carpeta Controllers
     5) importar modelo de Tarea:
-     IMPORTANTE, LAS TAREAS PERTENECEN A LOS PROECTOS,IMPORTAR MODELO PROYECTO
+     IMPORTANTE, LAS TAREAS PERTENECEN A LOS PROYECTOS, IMPORTAR MODELO PROYECTO
     6) Antes de crear una Tarea:
         - Debemos asegurarnos que el proyecto existan
         - Luego validar si el proyecto actual pertenece al usuario autenticado

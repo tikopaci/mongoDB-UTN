@@ -11,9 +11,11 @@ app.use(express.json({ extended: true }));
 const PORT = process.env.PORT || 4500;
 
 //ROUTES
-app.use('/api/users', require('./routes/users'));
+app.use('/api/usuarios', require('./routes/usuarios'));
 app.use('/api/auth', require('./routes/auth'));
-//app.use('/api/posts', require('./routes/posts'));
+app.use('/api/tareas', require('./routes/tareas'));
+app.use('/api/proyectos', require('./routes/proyectos'));
+
 
 app.listen(PORT, () => {
     console.log(`Sv escuchando en PORT: ${PORT}`);
